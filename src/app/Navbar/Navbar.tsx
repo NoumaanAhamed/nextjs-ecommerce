@@ -7,6 +7,7 @@ import { redirect } from "next/navigation";
 import { authOptions } from "../api/auth/[...nextauth]/route";
 import ShoppingCartButton from "./ShoppingCartButton";
 import UserMenuButton from "./UserMenuButton";
+import UploadThing from "../uploadthing/page";
 
 async function searchProducts(formData: FormData) {
   "use server";
@@ -31,6 +32,7 @@ export default async function Navbar() {
             VisualSearch
           </Link>
         </div>
+        <UploadThing />
         <div className="flex-none gap-2">
           <form action={searchProducts}>
             <div className="form-control">

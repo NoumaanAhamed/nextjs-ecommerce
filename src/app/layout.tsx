@@ -1,3 +1,4 @@
+import "@uploadthing/react/styles.css";
 import Footer from "./Footer";
 import Navbar from "./Navbar/Navbar";
 import "./globals.css";
